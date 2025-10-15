@@ -2,11 +2,15 @@
 <html>
   <head>
     <title><%= content_for(:title) || "Generative Ai Rails" %></title>
+    <% if Rails.env.development? %>
+      <%= vite_client_tag %>
+      <%= vite_react_refresh_tag %>
+    <% end %>
     ...
     <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= vite_client_tag %>
-    <%= vite_javascript_tag 'application' %>
+    <%= vite_javascript_tag 'application.tsx' %>
     <!--
       If using a TypeScript entrypoint file:
         vite_typescript_tag 'application'
