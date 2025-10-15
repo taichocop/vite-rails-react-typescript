@@ -14,7 +14,7 @@ import { Label } from "@/components/ui/label";
 export default function LoginForm() {
   return (
     <div className="flex min-h-screen items-center justify-center p-4">
-      <Card className="w-full max-w-md">
+      <Card className="w-[400px]">
         <CardHeader>
           <CardTitle className="text-2xl">ログイン</CardTitle>
           <CardDescription>アカウントにログインしてください</CardDescription>
@@ -28,14 +28,14 @@ export default function LoginForm() {
             <Label htmlFor="password">パスワード</Label>
             <Input id="password" type="password" />
           </div>
-          <div className="flex items-center justify-between">
+          <div className="flex justify-between flex-col">
             <div className="flex items-center space-x-2">
               <Checkbox id="remember" />
               <Label htmlFor="remember" className="text-sm">
                 ログイン情報を記憶する
               </Label>
             </div>
-            <a href="#" className="text-sm text-primary hover:underline">
+            <a href="#" className="text-sm text-primary hover:underline mt-2">
               パスワードをお忘れですか？
             </a>
           </div>
