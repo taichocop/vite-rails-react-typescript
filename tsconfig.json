@@ -1,15 +1,14 @@
 {
   "files": ["app/javascript/entrypoints/application.tsx"],
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "moduleResolution": "node",
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
@@ -23,7 +22,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./app/javascript/*"]
-    }
+    },
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["app/javascript/**/*"]
 }
