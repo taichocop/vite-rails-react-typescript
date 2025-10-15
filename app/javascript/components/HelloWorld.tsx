@@ -1,3 +1,5 @@
+import { Button } from "./ui/button";
+
 export default function HelloWorld() {
-  return <h1>Hello World</h1>;
+  return <Button>Click me</Button>;
 }
