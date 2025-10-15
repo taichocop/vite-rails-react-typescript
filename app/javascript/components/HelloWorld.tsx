@@ -1,5 +1,5 @@
-import { Button } from "./ui/button";
+import LoginForm from "./LoginForm";
 
 export default function HelloWorld() {
-  return <Button>Click me</Button>;
+  return <LoginForm />;
 }
